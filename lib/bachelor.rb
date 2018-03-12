@@ -55,5 +55,5 @@ def get_average_age_for_season(data, season)
       end 
     end 
   end 
-  avg = (age/count.to_f).roundlearn
+  avg = (age/count.to_f).round
 end
