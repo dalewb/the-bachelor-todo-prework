@@ -13,7 +13,9 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  
+  data.each do |season, people|
+    binding.pry
+  end 
 end
 
 def count_contestants_by_hometown(data, hometown)
