@@ -5,9 +5,9 @@ def get_first_name_of_season_winner(data, season)
     if season_num == season 
       # binding.pry 
       people.each do |person|
-        binding.pry 
-        if person[:status] == "Winner"
-          # puts person[:name].split(' ')[0]
+        # binding.pry 
+        if person["status"] == "Winner"
+          puts person["name"].split(' ')[0]
           # binding.pry
         end 
       end 
