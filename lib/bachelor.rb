@@ -38,7 +38,7 @@ def get_occupation(data, hometown)
    data.each do |season, people|
     people.each do |person|
       if person["hometown"] == hometown 
-        count += 1
+        return person["occupation"]
       end 
     end 
   end 
