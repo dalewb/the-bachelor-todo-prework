@@ -24,7 +24,14 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   count = 0 
-  data.each do |
+  data.each do |season, people|
+    people.each do |person|
+      if person["hometown"] == hometown 
+        count += 1
+      end 
+    end 
+  end 
+  count 
 end
 
 def get_occupation(data, hometown)
